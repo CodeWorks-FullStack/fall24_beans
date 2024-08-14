@@ -1,4 +1,58 @@
 /* NOTE did the style sheet work? */
 body {
   /* color: red; */
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  min-height: 5vh;
+}
+
+header,
+header .btn {
+  text-shadow: 0px 2px 8px black;
+}
+
+header .landing {
+  min-height: 85vh;
+}
+
+header .links {
+  min-height: 10vh;
+}
+
+.hero-bg {
+  background-image: url(https://images.unsplash.com/photo-1537130508299-46ab547b4be3?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+.little-yellow-line {
+  display: block;
+  height: 4px;
+  width: 30px;
+  background-color: var(--bs-warning);
+  border-radius: 10px;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900 */
+
+.playfair-display-400 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

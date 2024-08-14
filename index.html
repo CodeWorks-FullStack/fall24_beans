@@ -4,15 +4,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- NOTE bootstrap styles -->
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
     integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <!-- NOTE mdi icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <!-- NOTE bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- NOTE google font for fancy fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <!-- NOTE my custom styles -->
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#"><i class="fw-bold fs-3">Beans</i> <i class="bi bi-emoji-angry-fill"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reservation</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <header class="container-fluid bg-dark hero-bg text-light fw-bold">
+    <section class="row landing text-center justify-content-center align-items-center">
+      <div class="col-sm-8 col-md-6">
+        <p>
+          <span class="text-warning">Cafe</span>
+          <span>/Restaurant</span>
+        </p>
+        <h1>Beans</h1>
+        <p class="playfair-display-400">A unique café located in the heart of Los Angeles. Always fresh coffee and
+          biscuits. Open for indoor dining
+          and to-go orders.</p>
+        <button class="btn btn-outline-warning text-light fw-bold p-3 rounded-0">Make Reservation</button>
+      </div>
+    </section>
+
+    <section class="row links text-center pb-4">
+      <div class="col-md-6">
+        <span class="mdi mx-3 mdi-twitter"></span> <span class="mdi mx-3 mdi-facebook-gaming"></span> <span
+          class="mdi mx-3 mdi-instagram"></span>
+      </div>
+      <div class="col-md-6">
+        <i class="mdi mdi-map-marker text-warning"></i> 1234 Dining Str., Los Angeles, CA 12345-0000
+      </div>
+    </section>
+  </header>
+
+
+  <main class="container my-5">
+    <section class="row align-items-center">
+      <div class="col-md-6 p-5 order-0">
+        <sections class="row">
+          <div class="col-md-5">
+            <span class="little-yellow-line"></span>
+            Take a coffee break or enjoy a meal
+          </div>
+          <div class="col-md-7">
+            <img class="img-fluid"
+              src="https://images.unsplash.com/photo-1495862433577-132cf20d7902?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="">
+          </div>
+        </sections>
+      </div>
+      <div class="col-md-6 order-1">
+        <h2><i>Always</i> amazing experience</h2>
+        <p>Lorem Khaled Ipsum is a major key to success. Lion! Learning is cool, but knowing is better, and I know the
+          key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it</p>
+      </div>
+      <!-- REVIEW cols is order 0 1 2x 3 on medium or larger take this order (x is this col) -->
+      <!--                      0 1 3x 2 otherwise default to this order-->
+      <div class="col-md-6 order-3 order-md-2">
+        <h2><i>Beautiful</i> outdoor seating</h2>
+        <p>Learning is cool, but knowing is better, and I know the key to success. Surround yourself with angels.
+          Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. A major
+          key,</p>
+      </div>
+      <div class="col-md-6 p-5 order-2 order-md-3">
+        <section class="row align-items-end">
+          <div class="col-md-5">
+            <span class="little-yellow-line"></span>
+            Great Variety of foods you will enjoy.
+          </div>
+          <div class="col-md-7">
+            <img class="img-fluid"
+              src="https://images.unsplash.com/photo-1528699633788-424224dc89b5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="">
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- SECTION Bootstrap Grid Example -->
-  <section class="container bg-dark text-light">
+  <section class="container bg-dark text-light mt-5 border-top border-5 border-primary">
     container
     <!-- NOTE just cols, cols will evenly share a row-->
     <div class="row">
